@@ -1,33 +1,36 @@
 <?php
 
-namespace yii2mod\markdown;
+namespace rats\markdown;
 
 use yii\web\AssetBundle;
 
 /**
  * Class MarkdownEditorAsset
  *
- * @package yii2mod\markdown
+ * @package rats\markdown
  */
 class MarkdownEditorAsset extends AssetBundle
 {
     /**
      * @var string
      */
-    public $sourcePath = '@bower/simplemde';
+    public $sourcePath = '@rats/markdown/assets';
 
     /**
      * @var array
      */
     public $css = [
-        'dist/simplemde.min.css',
+        'simplemde.min.css',
     ];
 
     /**
      * @var array
      */
     public $js = [
-        'dist/simplemde.min.js',
+        'simplemde.min.js',
+        'inline-attachment.js',
+        'codemirror-4.inline-attachment.js',
+        'input.inline-attachment.js',
     ];
 
     /**

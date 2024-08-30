@@ -1,6 +1,6 @@
 <?php
 
-namespace yii2mod\markdown;
+namespace rats\markdown;
 
 use yii\helpers\Html;
 use yii\helpers\Inflector;
@@ -11,7 +11,7 @@ use yii\widgets\InputWidget;
 /**
  * Class MarkdownEditor
  *
- * @package yii2mod\markdown
+ * @package rats\markdown
  */
 class MarkdownEditor extends InputWidget
 {
