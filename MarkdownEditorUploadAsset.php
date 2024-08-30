@@ -5,11 +5,11 @@ namespace rats\markdown;
 use yii\web\AssetBundle;
 
 /**
- * Class MarkdownEditorAsset
+ * Class MarkdownEditorUploadAsset
  *
  * @package rats\markdown
  */
-class MarkdownEditorAsset extends AssetBundle
+class MarkdownEditorUploadAsset extends AssetBundle
 {
     /**
      * @var string
@@ -19,21 +19,17 @@ class MarkdownEditorAsset extends AssetBundle
     /**
      * @var array
      */
-    public $css = [
-        'simplemde.min.css',
-    ];
-
-    /**
-     * @var array
-     */
     public $js = [
-        'simplemde.min.js',
+        'inline-attachment.js',
+        'codemirror-4.inline-attachment.js',
+        'input.inline-attachment.js',
     ];
 
     /**
      * @var array
      */
     public $depends = [
+        'rats\markdown\MarkdownEditorAsset',
         'yii\web\YiiAsset',
     ];
 }
