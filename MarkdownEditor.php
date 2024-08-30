@@ -55,7 +55,7 @@ class MarkdownEditor extends InputWidget
             $view->registerJs("
                 inlineAttachment.editors.codemirror4.attach(simplemde.codemirror, {
                     onFileUploadResponse: function(xhr) {
-                        var result = JSON.parse(xhr.responseText),
+                        var result = JSON.parse(xhr.responseText);
                         console.log(result);
                         filename = result[this.settings.jsonFieldName];
                         console.log(filename);
