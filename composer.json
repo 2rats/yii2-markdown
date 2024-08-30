@@ -1,5 +1,5 @@
 {
-    "name": "yii2mod/yii2-markdown",
+    "name": "2rats/yii2-markdown",
     "description": "Markdown Widget for Yii2",
     "type": "yii2-extension",
     "keywords": [
@@ -15,15 +15,14 @@
         }
     ],
     "require": {
-        "yiisoft/yii2": "*",
-        "bower-asset/simplemde": "*"
+        "yiisoft/yii2": "*"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "~2.0"
     },
     "autoload": {
         "psr-4": {
-            "yii2mod\\markdown\\": ""
+            "rats\\markdown\\": ""
         }
     },
     "repositories": [
