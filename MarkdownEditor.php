@@ -53,7 +53,7 @@ class MarkdownEditor extends InputWidget
         if ($this->uploadUrl !== null) {
             MarkdownEditorUploadAsset::register($view);
             $view->registerJs("
-                inlineAttachment.editors.codemirror4.attach(simplemde.codemirror, {
+                inlineAttachment.editors.codemirror4.attach($varName.codemirror, {
                     onFileUploadResponse: function(xhr) {
                         var result = JSON.parse(xhr.responseText);
                         console.log(result);
