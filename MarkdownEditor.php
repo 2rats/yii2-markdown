@@ -95,7 +95,7 @@ class MarkdownEditor extends InputWidget
 
     protected function getToolbarConfig() {
         $toolbar =  [
-            'bold', 'italic', 'heading-1', 'heading-2', 'heading-3', '|',
+            'bold', 'italic', 'strikethrough', 'heading-1', 'heading-2', 'heading-3', '|',
             'code', 'unordered-list', 'ordered-list', '|',
             'link', 'image', 
         ];
