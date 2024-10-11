@@ -73,7 +73,7 @@ class MarkdownEditor extends InputWidget
                     },
                     uploadUrl: '" . $this->uploadUrl . "',
                     jsonFieldName: 'filename',
-                    urlText: \"![" . \Yii::t('app', 'Image description') . "]({filename})\"
+                    urlText: \"![" . \Yii::t('app', 'Image description') . "]({filename})\\n\"
                 });
             ");
         }
